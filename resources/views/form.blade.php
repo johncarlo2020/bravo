@@ -130,10 +130,11 @@
 
 <body>
     <img src="{{ asset('images/logo.webp') }}" alt="Logo" class="logo">
-    <form action="{{ route('user') }}" method="post">
-        @csrf
 
-        <div class="form-container">
+
+    <div class="form-container">
+        <form action="{{ route('user') }}" method="post">
+            @csrf
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required maxlength="30">
@@ -152,8 +153,9 @@
                     e-mail and text messages (including SMS/WhatsApp).</label>
             </div>
             <button type="submit" class="submit-btn">Submit</button>
-        </div>
-    </form>
+        </form>
+
+    </div>
 </body>
 
 </html>
