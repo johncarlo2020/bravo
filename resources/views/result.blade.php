@@ -6,18 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Result Page</title>
     <style>
+        @font-face {
+            font-family: 'Mundial';
+            src: url('{{ asset('font/Mundial-Regular.woff') }}') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
             margin: 0;
             overflow: hidden;
-            background-image: url('{{ asset('images/bgresult.webp') }}');
+            background-image: url('{{ asset('images/bgform.webp') }}');
             background-size: cover;
             background-position: center;
             height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: Arial, sans-serif;
+            font-family: 'Mundial', sans-serif;
             color: #4A236A;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 600;
         }
 
         h1 {
@@ -32,7 +45,7 @@
             flex-direction: column;
             align-items: center;
             bottom: 10px;
-            top: 31%;
+            top: 16vh;
         }
 
         .content>* {
@@ -43,6 +56,7 @@
             width: 100%;
             max-width: 300px;
             border-radius: 10px;
+            margin-bottom: 5%;
         }
 
         .download-btn {
@@ -53,7 +67,11 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
-            margin-top: 3vh;
+        }
+
+        .tag {
+            font-size: 20px;
+            margin-bottom: 5%
         }
 
         .next-btn {
@@ -64,7 +82,6 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
-            margin-top: 100%;
         }
 
         /* Responsive Styles */
@@ -82,8 +99,10 @@
 
 <body>
     <div class="content">
+        <h1 class="title"> LET WORDS <br> SPREAD KINDNESS</h1>
         <img id="poster" class="poster" src="{{ asset('images/pstt' . $quote . '.webp') }}" alt="Poster" />
         <button id="downloadLink" class="download-btn">Save & Share</button>
+        <p class="tag">#BeKindOnline</p>
         <a href="{{ route('end') }}">
             <button class="next-btn">Next</button>
         </a>
