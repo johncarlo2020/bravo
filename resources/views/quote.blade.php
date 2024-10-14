@@ -103,7 +103,7 @@
 <body>
     <div class="container">
         <div class="title-container">
-            <h1>Pick your positive word</h1>
+            <h1>Choose Your Kind Word</h1>
         </div>
 
         <!-- Quote buttons -->

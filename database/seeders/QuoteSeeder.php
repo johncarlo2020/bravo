@@ -14,7 +14,7 @@ class QuoteSeeder extends Seeder
     public function run(): void
     {
         Quote::create([
-            'name' => '#Be Kind Online',
+            'name' => '#BeKindOnline',
         ]);
 
         Quote::create([
