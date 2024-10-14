@@ -149,8 +149,8 @@
             </div>
             <div class="checkbox-container">
                 <input type="checkbox" id="promotions" name="promotions" required>
-                <label for="promotions"> I agree to receive marketing and promotional communications from SURIA KLCC via
-                    e-mail and text messages (including SMS/WhatsApp).</label>
+                <label for="promotions"> I have read and agree to the website <a
+                        href="https://www.suriaklcc.com.my/privacy-policy">privacy policy</a></label>
             </div>
             <button type="submit" class="submit-btn">Submit</button>
         </form>

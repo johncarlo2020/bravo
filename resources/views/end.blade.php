@@ -49,7 +49,7 @@
         // Show the popup after 4 seconds
         setTimeout(function() {
             document.getElementById('popup').style.display = 'block';
-        }, 4000);
+        }, 2000);
     </script>
 
 </body>

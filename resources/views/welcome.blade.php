@@ -33,7 +33,7 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s;
-            margin-top: 300px;
+            margin-top: 480px;
         }
 
         .start-btn:hover {
@@ -51,7 +51,8 @@
             .start-btn {
                 font-size: 16px;
                 padding: 10px 40px;
-                margin-top: 300px
+                margin-top: 480px;
+
             }
         }
     </style>
